@@ -1,6 +1,6 @@
 # Ruby wrapper for ExifTool
 
-[![Build Status](https://secure.travis-ci.org/exiftool-rb/exiftool.rb.svg?branch=master)](http://travis-ci.org/exiftool-rb/exiftool.rb)
+[![Build Status](https://app.travis-ci.com/exiftool-rb/exiftool.rb.svg?branch=master)](https://app.travis-ci.com/github/exiftool-rb/exiftool.rb)
 [![Gem Version](https://badge.fury.io/rb/exiftool.svg)](http://rubygems.org/gems/exiftool)
 [![Gem Downloads](https://img.shields.io/gem/dt/exiftool.svg)](http://rubygems.org/gems/exiftool)
 [![Gem Latest](https://img.shields.io/gem/dtv/exiftool.svg)](http://rubygems.org/gems/exiftool)
@@ -11,7 +11,7 @@ This gem is the simplest thing that could possibly work that
 reads the output of [exiftool](http://www.sno.phy.queensu.ca/~phil/exiftool)
 and renders it into a ruby hash, with *correctly typed values* and symbolized keys.
 
-Ruby 2.4 through 3.0 are supported.
+Ruby 2.6 through 3.0 are supported.
 
 ##  Ruby Support Deprecation Notice
 
@@ -142,6 +142,13 @@ to the tool, like this: ```Exiftool.command = '/home/ruby/Image-ExifTool-9.33/ex
 this if you've installed added the exiftool directory to the PATH of the shell that runs ruby.
 
 ## Change history
+
+### 1.2.4
+
+* Moved from travis-ci.org to travis-ci.com
+* Updated Ruby versions for Travis CI runs. Running on 2.6.8, 2.7.4 and 3.0.2
+* Updated simplecov version for test coverage reporting
+* Merged [PR #23](https://github.com/exiftool-rb/exiftool.rb/pull/23) by [urtabajev](https://github.com/urtabajev) that fixes `NameError` related to `pathname` standard library when multiget is used
 
 ### 1.2.3
 
